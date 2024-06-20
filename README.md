@@ -29,7 +29,6 @@ Welcome to the Basic Authentication System! This project is a simple and robust 
 - Node.js
 - Express
 - MySQL2
-- Sequelize (ORM)
 - JWT (JSON Web Tokens)
 - Swagger for API Documentation
 - Mocha & Chai for Testing
@@ -41,7 +40,7 @@ To get started with this project, follow the steps below:
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/chandan8018/basicauthenticationsystem.git
+    git clone https://github.com/Chandan8018/BasicAuthenticationSystem.git
     cd basicauthenticationsystem
     ```
 
@@ -67,7 +66,7 @@ To get started with this project, follow the steps below:
 4. **Run the application**:
 
     ```bash
-    npm start
+    npm run dev
     ```
 
 ## Environment Variables

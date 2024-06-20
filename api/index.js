@@ -6,7 +6,6 @@ import authRoutes from "./routes/auth.route.js";
 import userRoutes from "./routes/user.route.js";
 import swaggerJSDoc from "swagger-jsdoc";
 import swaggerUI from "swagger-ui-express";
-import { errorHandler } from "./utils/error.js";
 
 dotenv.config();
 const app = express();

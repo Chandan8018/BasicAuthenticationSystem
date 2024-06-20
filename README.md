@@ -120,3 +120,6 @@ project-directory/
 ### API Documentation
 
 The API documentation is created using Swagger. To view the documentation, run the server just click on [api-docs](http://localhost:7979/api-docs) it's naviget to your browser.
+---
+
+[api-docs](./assets/Swagger-UI.png)

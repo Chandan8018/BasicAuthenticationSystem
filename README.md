@@ -87,7 +87,7 @@ Make sure to create a `.env` file in the root directory of your project and conf
 To run the server, use the following command:
 
 ```bash
-npm start
+npm run dev
 ```
 ### Project Structure
 

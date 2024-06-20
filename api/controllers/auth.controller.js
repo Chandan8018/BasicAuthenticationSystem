@@ -40,24 +40,13 @@ export const login = async (req, res, next) => {
     const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, {
       expiresIn: "1h",
     });
+
+    const { password: pass, ...rest } = user;
+
     res
       .cookie("access_token", token, { httpOnly: true })
       .status(200)
-      .json({ token });
-  } catch (error) {
-    next(error);
-  }
-};
-
-export const getProfile = async (req, res, next) => {
-  try {
-    const user = await User.findById(req.user.id);
-    if (!user) {
-      return next(errorHandler(404, "User not found"));
-    }
-
-    const { password, ...userData } = user;
-    res.status(200).json(userData);
+      .json({ rest });
   } catch (error) {
     next(error);
   }
